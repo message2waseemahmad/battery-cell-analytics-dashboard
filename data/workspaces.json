@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "NMC622 Aging Study",
+    "description": "Cycle-life characterisation of NMC622 cells at 25 °C, C/2 charge–discharge rate.",
+    "widgets": [
+      {
+        "id": 1,
+        "name": "Discharge Capacity",
+        "cell_group_id": 1,
+        "kpi": "discharge_capacity_Ah"
+      },
+      {
+        "id": 2,
+        "name": "State of Health",
+        "cell_group_id": 1,
+        "kpi": "soh_percent"
+      },
+      {
+        "id": 3,
+        "name": "DC Internal Resistance",
+        "cell_group_id": 1,
+        "kpi": "dcir_mOhm"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Temperature Comparison",
+    "description": "Effect of operating temperature on NMC622 cycle life (25 °C vs 45 °C).",
+    "widgets": [
+      {
+        "id": 4,
+        "name": "Capacity Fade at 45 °C",
+        "cell_group_id": 3,
+        "kpi": "discharge_capacity_Ah"
+      },
+      {
+        "id": 5,
+        "name": "DCIR Growth at 45 °C",
+        "cell_group_id": 3,
+        "kpi": "dcir_mOhm"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chemistry Benchmark",
+    "description": "SOH comparison across NMC622, NMC811, and LFP chemistries at 25 °C.",
+    "widgets": [
+      {
+        "id": 6,
+        "name": "NMC811 State of Health",
+        "cell_group_id": 2,
+        "kpi": "soh_percent"
+      },
+      {
+        "id": 7,
+        "name": "LFP State of Health",
+        "cell_group_id": 4,
+        "kpi": "soh_percent"
+      }
+    ]
+  }
+]
